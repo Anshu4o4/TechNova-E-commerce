@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Signup | TechNova</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card glass">
+        <!-- Visual Side -->
+        <div class="auth-image">
+          <a href="/" class="logo" style="margin-bottom: 2rem;">Tech<span>Nova</span></a>
+          <h1 style="color: white; font-size: 3rem;">Join the Future of Tech</h1>
+          <p style="color: rgba(255,255,255,0.8);">Get exclusive access to next-gen gadgets and member-only deals.</p>
+        </div>
+
+        <!-- Form Side -->
+        <div class="auth-form">
+          <h2>Welcome Back</h2>
+          <p style="color: var(--text-dim); margin-bottom: 2rem;">Don't have an account? <a href="#" style="color: var(--primary);">Sign Up</a></p>
+          
+          <form id="login-form">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" id="password" placeholder="••••••••" required />
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Log In</button>
+          </form>
+
+          <div style="text-align: center; margin-top: 2rem; color: var(--text-dim); position: relative;">
+            <span style="background: #0F172A; padding: 0 1rem; z-index: 1; position: relative;">Or continue with</span>
+            <hr style="position: absolute; top: 50%; width: 100%; border: 0.5px solid var(--glass-border); margin: 0; transform: translateY(-50%);" />
+          </div>
+
+          <div class="social-auth">
+            <button class="social-btn" id="google-login"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.908 3.152-1.928 4.176-1.228 1.228-3.14 2.56-6.832 2.56-5.94 0-10.732-4.812-10.732-10.752s4.792-10.752 10.732-10.752c3.212 0 5.516 1.268 7.392 3.044l2.308-2.308C19.14 1.868 16.14 0 12.48 0 5.624 0 0 5.624 0 12.5s5.624 12.5 12.48 12.5c3.708 0 6.544-1.212 8.796-3.56 2.324-2.324 3.056-5.588 3.056-8.216 0-.78-.06-1.544-.22-2.276h-11.632z"/></svg> Google</button>
+            <button class="social-btn" id="github-login"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
